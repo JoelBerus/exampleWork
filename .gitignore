@@ -1,0 +1,68 @@
+# --------------------------------------------------------------------
+# File System
+# --------------------------------------------------------------------
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore all files that start with ~
+~*
+
+# --------------------------------------------------------------------
+# WordPress Core
+# --------------------------------------------------------------------
+/*
+!.gitignore
+!wp-content/
+!README.md
+
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+!wp-content/plugins/*
+!wp-content/themes/*
+!wp-content/themes/index.php
+
+# # Ignore everything in the "themes" directory, except the themes you
+# # specify (see the commented-out example for a hint on how to do this.)
+wp-content/themes/*
+!wp-content/themes/twentytwentyone
+!wp-content/themes/bb-theme
+!wp-content/themes/enfold
+!wp-content/themes/kallyas
+!wp-content/themes/kallyas-child
+!wp-content/themes/code-backup
+
+# --------------------------------------------------------------------
+# Development
+# --------------------------------------------------------------------
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+
+# dev & build files
+node_modules
+.sass-cache
+*css.map
+*js.map
+*/maps/*
+
+
+# large files
+wp-content/plugins/official-facebook-pixel/vendor/facebook/**/**/video.mp4
+wp-content/themes/kallyas/framework/hg-theme-framework/inc/admin/importer/assets/sounds/**/*.mp3
